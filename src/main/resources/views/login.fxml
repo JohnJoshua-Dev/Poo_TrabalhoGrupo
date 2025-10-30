@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx/11.0.1" 
+      xmlns:fx="http://javafx.com/fxml/1" 
+      alignment="CENTER" 
+      spacing="20" 
+      style="-fx-background-color: linear-gradient(to bottom, #2c3e50, #3498db);"
+      fx:controller="com.banco.controllers.LoginController">
+    
+    <padding><Insets top="40" right="40" bottom="40" left="40"/></padding>
+    
+    <!-- Cabeçalho -->
+    <VBox alignment="CENTER" spacing="10">
+        <Text fill="white" text="🏦">
+            <font>
+                <Font name="System" size="48" />
+            </font>
+        </Text>
+        <Text fill="white" text="Sistema Bancário POO">
+            <font>
+                <Font name="System Bold" size="24" />
+            </font>
+        </Text>
+        <Text fill="#ecf0f1" text="Gestão de Clientes Bancários">
+            <font>
+                <Font name="System" size="14" />
+            </font>
+        </Text>
+    </VBox>
+    
+    <!-- Formulário de Login -->
+    <VBox spacing="15" style="-fx-background-color: white; -fx-background-radius: 10; -fx-padding: 30; -fx-min-width: 350;">
+        <Label text="Login do Sistema" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-text-fill: #2c3e50;"/>
+        
+        <VBox spacing="8">
+            <Label text="Username:" style="-fx-text-fill: #2c3e50; -fx-font-weight: bold;"/>
+            <TextField fx:id="txtUsername" promptText="Digite seu username" 
+                      style="-fx-border-color: #bdc3c7; -fx-border-radius: 5; -fx-padding: 8;"/>
+        </VBox>
+        
+        <VBox spacing="8">
+            <Label text="Password:" style="-fx-text-fill: #2c3e50; -fx-font-weight: bold;"/>
+            <PasswordField fx:id="txtPassword" promptText="Digite sua senha" 
+                          style="-fx-border-color: #bdc3c7; -fx-border-radius: 5; -fx-padding: 8;"/>
+        </VBox>
+        
+        <CheckBox fx:id="chkLembrar" text="Lembrar login" 
+                 style="-fx-text-fill: #2c3e50;"/>
+        
+        <Button fx:id="btnLogin" text="Entrar no Sistema" 
+                onAction="#handleLogin" 
+                style="-fx-background-color: #27ae60; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 14; -fx-padding: 12; -fx-background-radius: 5; -fx"/>
+        
+        <Hyperlink text="Esqueci minha senha" 
+                  onAction="#handleEsqueciSenha"
+                  style="-fx-text-fill: #3498db; -fx-border-color: transparent;"/>
+        
+        <!-- Credenciais de teste -->
+        <VBox spacing="5" style="-fx-background-color: #f8f9fa; -fx-padding: 10; -fx-background-radius: 5;">
+            <Label text="Credenciais para teste:" style="-fx-text-fill: #7f8c8d; -fx-font-size: 11; -fx-font-weight: bold;"/>
+            <Label text="Username: admin" style="-fx-text-fill: #7f8c8d; -fx-font-size: 10;"/>
+            <Label text="Password: admin" style="-fx-text-fill: #7f8c8d; -fx-font-size: 10;"/>
+        </VBox>
+    </VBox>
+    
+    <!-- Rodapé -->
+    <Text fill="#ecf0f1" text="© Alvaro Hilário 2025 Sistema Bancário - Desenvolvido com JavaFX">
+        <font>
+            <Font name="System" size="10" />
+        </font>
+    </Text>
+</VBox>

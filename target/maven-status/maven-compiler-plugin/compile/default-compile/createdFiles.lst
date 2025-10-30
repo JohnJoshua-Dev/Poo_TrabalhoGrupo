@@ -1,0 +1,17 @@
+com\banco\models\Conta.class
+com\banco\models\Usuario.class
+com\banco\models\Transacao.class
+com\banco\utils\AlertUtils.class
+com\banco\controllers\ClienteContasController.class
+com\banco\config\ApiConfig.class
+com\banco\services\AuthService.class
+com\banco\config\DatabaseConfig.class
+com\banco\controllers\DashboardController.class
+com\banco\Main.class
+com\banco\controllers\ClienteHomeController.class
+com\banco\controllers\LoginController.class
+com\banco\services\ApiService.class
+com\banco\controllers\ClienteController.class
+com\banco\models\Cliente.class
+com\banco\controllers\ClienteController$1.class
+com\banco\controllers\TransacaoController.class

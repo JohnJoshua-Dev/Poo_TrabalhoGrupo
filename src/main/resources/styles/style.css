@@ -1,0 +1,282 @@
+/* style.css */
+
+.root {
+    -fx-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Efeitos de hover para os itens do menu */
+.menu-item:hover {
+    -fx-background-color: #34495e;
+    -fx-cursor: hand;
+}
+
+.menu-item-active {
+    -fx-background-color: #3498db;
+    -fx-cursor: hand;
+}
+
+.menu-item-active .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+/* Cards com efeitos */
+.card {
+    -fx-background-color: white;
+    -fx-background-radius: 15;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 2);
+}
+
+.card:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 15, 0, 0, 4);
+}
+
+/* Botões de ação rápida */
+.action-card {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0, 0, 2);
+    -fx-cursor: hand;
+}
+
+.action-card:hover {
+    -fx-background-color: #3498db;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 3);
+}
+
+.action-card:hover .label {
+    -fx-text-fill: white;
+}
+
+/* Cores temáticas para métricas */
+.metric-clients {
+    -fx-border-color: #3498db;
+    -fx-border-width: 0 0 4 0;
+}
+
+.metric-accounts {
+    -fx-border-color: #27ae60;
+    -fx-border-width: 0 0 4 0;
+}
+
+.metric-transactions {
+    -fx-border-color: #e67e22;
+    -fx-border-width: 0 0 4 0;
+}
+
+.metric-balance {
+    -fx-border-color: #9b59b6;
+    -fx-border-width: 0 0 4 0;
+}
+
+/* Botões */
+.btn-primary {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-padding: 8 16;
+}
+
+.btn-primary:hover {
+    -fx-background-color: #2980b9;
+}
+
+.btn-danger {
+    -fx-background-color: #e74c3c;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-padding: 8 16;
+}
+
+.btn-danger:hover {
+    -fx-background-color: #c0392b;
+}
+
+/* Estatísticas */
+.stat-card {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0, 0, 2);
+}
+
+/* Títulos */
+.title-primary {
+    -fx-font-size: 28;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+.title-secondary {
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+.subtitle {
+    -fx-text-fill: #7f8c8d;
+    -fx-font-size: 14;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        -fx-opacity: 0;
+    }
+    to {
+        -fx-opacity: 1;
+    }
+}
+
+.fade-in {
+    -fx-animation: fadeIn 0.5s ease-in;
+}
+
+/* cliente-home.css */
+
+.root {
+    -fx-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Efeitos de hover para os itens do menu */
+.menu-item:hover {
+    -fx-background-color: #34495e;
+    -fx-cursor: hand;
+}
+
+.menu-item-active {
+    -fx-background-color: #3498db;
+    -fx-cursor: hand;
+}
+
+.menu-item-active .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+/* Cards com efeitos */
+.card {
+    -fx-background-color: white;
+    -fx-background-radius: 15;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 2);
+}
+
+.card:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 15, 0, 0, 4);
+}
+
+/* Cartões de crédito/débito */
+.card-credito {
+    -fx-background-color: linear-gradient(to right, #3498db, #2980b9);
+}
+
+.card-debito {
+    -fx-background-color: linear-gradient(to right, #e67e22, #d35400);
+}
+
+/* Botões de ação rápida */
+.action-card {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0, 0, 2);
+    -fx-cursor: hand;
+}
+
+.action-card:hover {
+    -fx-background-color: #3498db;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 3);
+}
+
+.action-card:hover .label {
+    -fx-text-fill: white;
+}
+
+/* Transações */
+.transacao-entrada {
+    -fx-border-color: #27ae60;
+    -fx-border-width: 0 0 0 3;
+}
+
+.transacao-saida {
+    -fx-border-color: #e74c3c;
+    -fx-border-width: 0 0 0 3;
+}
+
+/* Botões */
+.btn-primary {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-padding: 8 16;
+}
+
+.btn-primary:hover {
+    -fx-background-color: #2980b9;
+}
+
+.btn-danger {
+    -fx-background-color: #e74c3c;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-padding: 8 16;
+}
+
+.btn-danger:hover {
+    -fx-background-color: #c0392b;
+}
+
+.btn-transparent {
+    -fx-background-color: transparent;
+    -fx-text-fill: #3498db;
+    -fx-font-size: 12;
+}
+
+.btn-transparent:hover {
+    -fx-text-fill: #2980b9;
+}
+
+/* Títulos */
+.title-primary {
+    -fx-font-size: 28;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+.title-secondary {
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+.subtitle {
+    -fx-text-fill: #7f8c8d;
+    -fx-font-size: 14;
+}
+
+/* Cores para valores */
+.valor-positivo {
+    -fx-text-fill: #27ae60;
+    -fx-font-weight: bold;
+}
+
+.valor-negativo {
+    -fx-text-fill: #e74c3c;
+    -fx-font-weight: bold;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        -fx-opacity: 0;
+    }
+    to {
+        -fx-opacity: 1;
+    }
+}
+
+.fade-in {
+    -fx-animation: fadeIn 0.5s ease-in;
+}
